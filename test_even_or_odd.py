@@ -1,7 +1,7 @@
-def evenandodd(num):
-    if num % 2 == 0:
-        return "The number is even"
-    else:
-        return "The number is odd"
+from even_or_odd import evenandodd
 
-print("Even and  odd result is: ", evenandodd(7))
+def test_even():
+    assert evenandodd(10) == "The number is even"
+
+def test_odd():
+    assert evenandodd(7) == "The number is odd"
